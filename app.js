@@ -15,3 +15,11 @@ states_values.forEach((statePolygon, index) => {
     console.log(`polygon of ${states_keys[index]} is:` )
     console.log(statePolygon)
 });
+
+states_values.forEach((statePolygon, index) => {
+
+    let point = [longitude,latitude]
+    if(pointInPolygon(point, statePolygon)) {
+        console.log(`The point entered is in ${states_keys[index]}`)
+    }
+})
