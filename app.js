@@ -7,3 +7,8 @@ const latitude = args[1];
 
 console.log(`Point entered is: (${longitude}, ${latitude})`);
 
+let json_data = JSON.parse(JSON.stringify(states))
+let states_values = Object.values(json_data);
+let states_keys = Object.keys(json_data);
+
+
