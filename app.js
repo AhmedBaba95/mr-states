@@ -11,4 +11,7 @@ let json_data = JSON.parse(JSON.stringify(states))
 let states_values = Object.values(json_data);
 let states_keys = Object.keys(json_data);
 
-
+states_values.forEach((statePolygon, index) => {
+    console.log(`polygon of ${states_keys[index]} is:` )
+    console.log(statePolygon)
+});
