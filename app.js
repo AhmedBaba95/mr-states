@@ -38,3 +38,4 @@ if(args.length == 0){
     }
 }
 
+//Point in TIDJIKJA: [ -11.8704, 18.7999 ]
