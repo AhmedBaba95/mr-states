@@ -11,7 +11,6 @@ if(args.length == 0){
     console.log("Point invalid")
 } else {
     console.log(`Point entered is: (${longitude}, ${latitude})`);
-
     let json_data = JSON.parse(JSON.stringify(states))
     let states_values = Object.values(json_data);
     let states_keys = Object.keys(json_data);
@@ -24,7 +23,6 @@ if(args.length == 0){
     });
 
     let hasAState = false
-
     states_values.forEach((statePolygon, index) => {
 
         let point = [longitude,latitude]
