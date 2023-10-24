@@ -7,11 +7,9 @@ let args = process.argv.slice(2);
 const longitude = args[0];
 const latitude = args[1];
 
-// Check the number of arguments.
-if (args.length == 0) {
-    console.log("Please Enter A Point");
-} else if (args.length > 2) {
-    console.log("Point invalid");
+// Check the number of arguments and whether they are valid numbers.
+if (args.length !== 2 || isNaN(longitude) || isNaN(latitude)) {
+    console.log("Please Enter Valid Longitude and Latitude");
 } else {
     // Display the point entered by the user.
     console.log(`Point entered is: (${longitude}, ${latitude})`);
@@ -46,6 +44,5 @@ if (args.length == 0) {
         console.log("The Point is not in any polygon");
     }
 }
-
 // Example point within the "TIDJIKJA" polygon.
 // Point: [ -11.8704, 18.7999 ]
